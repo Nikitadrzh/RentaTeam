@@ -1,4 +1,4 @@
-package ru.nikitadrzh.rentateam.ui.main.bottom_navigation
+package ru.nikitadrzh.rentateam.ui.main.view_pager
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager

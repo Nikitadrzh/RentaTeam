@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT
 import kotlinx.android.synthetic.main.fragment_menu.*
 import ru.nikitadrzh.rentateam.R
+import ru.nikitadrzh.rentateam.ui.main.view_pager.FixedTabsPagerAdapter
 
 class MenuFragment : Fragment() {
 
