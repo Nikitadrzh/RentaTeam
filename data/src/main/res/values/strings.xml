@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">data</string>
+
+    <string-array name="pizza_titles">
+        <item>Пепперони Фреш с перцем</item>
+        <item>Пепперони Фреш с томатами</item>
+        <item>Сырная</item>
+        <item>Ветчина и сыр</item>
+        <item>Кисло-сладкий цыпленок</item>
+        <item>Брынза и моцарелла</item>
+        <item>Испанские колбаски Чоризо</item>
+        <item>Чизбургер-пицца</item>
+        <item>Крэйзи пепперони</item>
+        <item>Креветки по-азиатски</item>
+        <item>Пицца Том Ям</item>
+    </string-array>
+</resources>
