@@ -2,9 +2,9 @@ package ru.nikitadrzh.rentateam.ui.main.injection.modules
 
 import dagger.Module
 import dagger.Provides
+import ru.nikitadrzh.rentateam.ui.main.injection.DaggerInitializer
 import ru.nikitadrzh.rentateam.ui.main.view_pager.pizza_list.PizzaContract
 import ru.nikitadrzh.rentateam.ui.main.view_pager.pizza_list.PizzaPresenter
-import ru.nikitadrzh.view.injection.DaggerInitializer
 
 @Module
 class PresentersModule(private val pizzaView: PizzaContract.View) {

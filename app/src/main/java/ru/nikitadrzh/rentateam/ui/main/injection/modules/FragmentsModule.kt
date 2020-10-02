@@ -10,17 +10,11 @@ import ru.nikitadrzh.rentateam.ui.main.view_pager.RefreshmentsFragment
 class FragmentsModule {
 
     @Provides
-    fun provideComboFragment(): ComboFragment {
-        return ComboFragment()
-    }
+    fun provideComboFragment() = ComboFragment()
 
     @Provides
-    fun provideDrinksFragment(): DrinksFragment {
-        return DrinksFragment()
-    }
+    fun provideDrinksFragment() = DrinksFragment()
 
     @Provides
-    fun provideRefreshmentsFragment(): RefreshmentsFragment {
-        return RefreshmentsFragment()
-    }
+    fun provideRefreshmentsFragment() = RefreshmentsFragment()
 }

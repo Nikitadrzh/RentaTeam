@@ -8,7 +8,5 @@ import ru.nikitadrzh.rentateam.ui.main.view_pager.pizza_list.PizzaRecyclerAdapte
 class RecyclerModule {
 
     @Provides
-    fun providePizzasRecyclerAdapter(): PizzaRecyclerAdapter {
-        return PizzaRecyclerAdapter()
-    }
+    fun providePizzasRecyclerAdapter() = PizzaRecyclerAdapter()
 }

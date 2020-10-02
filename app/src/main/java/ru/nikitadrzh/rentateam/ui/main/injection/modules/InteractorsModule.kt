@@ -11,12 +11,9 @@ import ru.nikitadrzh.domain.repository.PizzaRepository
 class InteractorsModule {
 
     @Provides
-    fun providePizzaRepository(context: Context): PizzaRepository {
-        return PizzaRepositoryImpl(context)
-    }
+    fun providePizzaRepository(context: Context): PizzaRepository = PizzaRepositoryImpl(context)
 
     @Provides
-    fun provideGetPizzasInteractor(pizzaRepository: PizzaRepository): GetPizzaInteractor {
-        return GetPizzaInteractor(pizzaRepository)
-    }
+    fun provideGetPizzasInteractor(pizzaRepository: PizzaRepository) =
+        GetPizzaInteractor(pizzaRepository)
 }

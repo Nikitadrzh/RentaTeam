@@ -7,7 +7,7 @@ import ru.nikitadrzh.domain.interactor.GetPizzaInteractor
 import ru.nikitadrzh.domain.model.Pizza
 import javax.inject.Inject
 
-class PizzaPresenter(val view: PizzaContract.View) {
+class PizzaPresenter(private val view: PizzaContract.View) {
     private lateinit var findPizzasDisposable: Disposable
 
     @Inject
@@ -23,11 +23,7 @@ class PizzaPresenter(val view: PizzaContract.View) {
             .subscribe(this::showPizzas, this::showError)
     }
 
-    private fun showPizzas(pizzas: List<Pizza>) {
-        view.showPizzas(pizzas)
-    }
+    private fun showPizzas(pizzas: List<Pizza>) = view.showPizzas(pizzas)
 
-    private fun showError(error: Throwable) {
-        view.showError(error)
-    }
+    private fun showError(error: Throwable) = view.showError(error)
 }

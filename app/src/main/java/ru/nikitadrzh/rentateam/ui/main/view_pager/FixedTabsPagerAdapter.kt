@@ -3,9 +3,6 @@ package ru.nikitadrzh.rentateam.ui.main.view_pager
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
-import ru.nikitadrzh.rentateam.ui.main.view_pager.ComboFragment
-import ru.nikitadrzh.rentateam.ui.main.view_pager.DrinksFragment
-import ru.nikitadrzh.rentateam.ui.main.view_pager.RefreshmentsFragment
 import ru.nikitadrzh.rentateam.ui.main.view_pager.pizza_list.PizzaFragment
 
 class FixedTabsPagerAdapter(

@@ -6,10 +6,8 @@ import dagger.Provides
 import ru.nikitadrzh.rentateam.ui.main.view_pager.pizza_list.PizzaFragment
 
 @Module
-class ContextModule(val view: PizzaFragment) {
+class ContextModule(private val view: PizzaFragment) {
 
     @Provides
-    fun provideContext(): Context {
-        return view.context!!
-    }
+    fun provideContext(): Context = view.requireContext()
 }

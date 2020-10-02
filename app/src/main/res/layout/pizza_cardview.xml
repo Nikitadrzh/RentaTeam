@@ -27,7 +27,8 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:srcCompat="@tools:sample/avatars[6]" />
+                tools:srcCompat="@tools:sample/avatars[6]"
+                tools:ignore="ContentDescription" />
 
             <TextView
                 android:id="@+id/pizza_title"
