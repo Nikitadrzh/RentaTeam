@@ -1,7 +1,5 @@
-package ru.nikitadrzh.view.injection
+package ru.nikitadrzh.rentateam.ui.main.injection
 
-import ru.nikitadrzh.rentateam.ui.main.injection.ActivityComponent
-import ru.nikitadrzh.rentateam.ui.main.injection.DaggerActivityComponent
 import ru.nikitadrzh.rentateam.ui.main.injection.modules.ContextModule
 import ru.nikitadrzh.rentateam.ui.main.injection.modules.PresentersModule
 import ru.nikitadrzh.rentateam.ui.main.view_pager.pizza_list.PizzaFragment

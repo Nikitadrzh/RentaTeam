@@ -9,7 +9,5 @@ import io.reactivex.android.schedulers.AndroidSchedulers
 class SchedulersModule {
 
     @Provides
-    fun provideAndroidSchedulers(): Scheduler {
-        return AndroidSchedulers.mainThread()
-    }
+    fun provideAndroidSchedulers(): Scheduler = AndroidSchedulers.mainThread()
 }

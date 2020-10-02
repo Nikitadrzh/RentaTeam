@@ -27,14 +27,15 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:srcCompat="@tools:sample/avatars[6]" />
+                tools:srcCompat="@tools:sample/avatars[6]"
+                tools:ignore="ContentDescription" />
 
             <TextView
                 android:id="@+id/pizza_title"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:text="Title"
+                tools:text="Title"
                 app:layout_constraintBottom_toBottomOf="@+id/pizza_image"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"

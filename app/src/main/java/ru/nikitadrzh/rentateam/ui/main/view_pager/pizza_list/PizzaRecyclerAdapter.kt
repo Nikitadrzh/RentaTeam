@@ -13,23 +13,19 @@ class PizzaRecyclerAdapter :
 
     private var pizzaList: MutableList<Pizza> = ArrayList()
 
-    override fun getItemCount(): Int {
-        return pizzaList.size
-    }
+    override fun getItemCount() = pizzaList.size
 
-    override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: ItemViewHolder, position: Int) =
         holder.setItem(pizzaList[position])
-    }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {
-        val itemView =
-            LayoutInflater.from(parent.context).inflate(R.layout.pizza_cardview, parent, false)
         return ItemViewHolder(
-            itemView
+            LayoutInflater.from(parent.context).inflate(R.layout.pizza_cardview, parent, false)
         )
     }
 
     fun onPizzaListUpdates(pizzaList: List<Pizza>) {
+        this.pizzaList.clear()
         this.pizzaList.addAll(pizzaList)
         notifyDataSetChanged()
     }
@@ -37,8 +33,7 @@ class PizzaRecyclerAdapter :
     /**
      * ViewHolder
      */
-    class ItemViewHolder(itemView: View) :
-        RecyclerView.ViewHolder(itemView) {
+    class ItemViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
         private lateinit var pizzaTitle: String
 
